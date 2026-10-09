@@ -1,5 +1,9 @@
 pipeline{
   agent any
+  parameters{
+    string(name: 'FOOD_NAME', defaultValue: 'tomato')
+    string(name: 'VEGETABLE', defaultValue: 'potato')
+  }
   stages{
     stage('''Docker Installation'''){
      steps{
