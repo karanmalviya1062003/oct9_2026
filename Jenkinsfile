@@ -16,6 +16,8 @@ pipeline{
         sudo service docker start
         sudo service docker status
         '''
+        sudo docker image pull ubuntu:latest
+        sudo docker images
      }  
     }   
   }
